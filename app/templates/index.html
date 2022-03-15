@@ -1,0 +1,2782 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de necesidades</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static "base/css/style.css" %}"/>
+    <link rel="stylesheet" href="{% static "base/css/nav.css" %}"/>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+
+    <!-- Google charts -->
+    <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+    
+    <!-- Plotly js -->
+    <script src='https://cdn.plot.ly/plotly-2.9.0.min.js'></script>
+
+    <!-- Javascript animation parts  ScrollRevale-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+</head>
+<body>
+    <!-- Banner -->
+    <section>
+
+        <div class="container">
+            <div class="banner1">
+                <div class="row">
+                
+                    <div class="col-12 col-sm-6 col-md-8">
+                        <h1 class="titlePrincipal">Evaluación de necesidades multisectorial, situación de la niñez en el marco de las emergencias</h1>
+                    </div>
+                    <div  class="col-12 col-sm-6 col-md-4">
+                        <div class="">
+                            <!-- <p class=""><img src="{% static "base/img/logoimmapunicef.png" %}"></p> -->
+                            <p class="introIma"><img src="{% static "base/img/LaGuajira.jpeg" %}"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <div class="">
+                    <!-- <p class=""><img src="{% static "base/img/logoimmapunicef.png" %}"></p> -->
+                    <p class="image"><img src="{% static "base/img/logoimmapunicef.png" %}" width="310" height="150"></p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    
+    {% block cuerpo %}
+
+    <!-- Introduction -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-xs-12 col-sm-12 col-md-7"> -->
+                <div>
+                    <p class="paragraph">Los Niños, Niñas y Adolescentes (de ahora en adelante NNA) se enfrentan a contextos de pobreza, conflicto armado, violencia sexual, y desastres naturales, impactando negativamente su bienestar y calidad de vida en términos de salud, seguridad alimentaria, educación y protección. Sumado a esto, la situación de flujo migratorio mixto y la pandemia por la COVID-19 ha limitado aún más el cumplimiento de sus derechos. </p>
+                    <p class="paragraph">La situación actual de conflicto armado y delincuencia común ha exacerbado el reclutamiento de NNA por grupos ilegales y ha aumentado el desplazamiento de comunidades. Por su parte, los desastres naturales afectan constantemente las condiciones sociales, económicas, culturales y ambientales de esta población, dificultan el acceso a servicios y alteran la vida familiar y comunitaria. A su vez, por causa de la pandemia, el acceso a la educación se convirtió en un gran desafío. El cierre de las instituciones educativas obligó a maestros y maestras a dictar clases virtualmente. Sin embargo, el acceso a internet todavía sigue siendo limitado en varias regiones del país, particularmente en las zonas rurales. Así como también el aumento del desempleo y la pérdida de ingresos pueden aumentar el riesgo de violencia de género en las familias, riesgos sanitarios y de seguridad. </p>
+                    <p class="paragraph">Adicionalmente, la población migrante de NNA actualmente encuentran dificultadas para acceder a bienes y servicios de primera necesidad (agua potable, alimentación básica, vivienda, y salud). De igual forma, la ausencia de documentación sobre su estatus migratorio obstaculiza el acceso a educación, empleo formal de los cuidadores y a servicios de salud. </p>
+                    <p class="paragraph">Bajo este contexto y con el objetivo de responder de manera oportuna ante la situación de múltiple afectación de los NNA en Colombia, UNICEF se encuentra trabajando con iMMAP en el desarrollo e implementación de una herramienta para la evaluación de necesidades de la niñez en contextos de emergencia humanitaria en Colombia, que logre la identificación de necesidades, cerrar brechas de información, así como la elaboración de estrategias para la atención humanitaria. </p>
+                </div>
+                <!-- <div  class="col-xs-12 col-sm-12 col-md-5">
+                    <div>
+                        <p ><img src="{% static "base/img/LaGuajira.jpeg" %}" class="introIma"></p>
+                        <p class="introImaWord">La Guajira - Colombia</p>
+                    </div>
+                </div> -->
+            </div>
+
+            <div>
+                <p class="paragraph">Para el caso particular de este proyecto, se hablará de una Evaluación de necesidades multisectorial a nivel comunitario para recolección de datos primarios, que tiene como objetivos específicos: </p>
+            </div>
+            <div>
+                <ul class="lista">
+                    <li class="salto-lista">Rastrear información primaria y secundaria sobre la situación de emergencia </li>
+                    <li class="salto-lista">Identificar información sobre la niñez en el marco de la situación de emergencia humanitaria que se quiere analizar, ya sea frente a temas de migración, conflicto armado, desastres naturales, u otro tipo de emergencia. </li>
+                    <li class="salto-lista">Sistematizar la información recolectada sobre la niñez en las comunidades vulnerables </li>
+                    <li class="salto-lista">Analizar la situación por cada sector, para el desarrollo de una evaluación de necesidades y posibles estrategias de respuesta</li>
+                    <li class="salto-lista">Proporcionar elementos e información que aumenten la capacidad de intervención y asistencia en la recuperación de las comunidades </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Metodologia -->
+    <section>
+        <div class="container metodologia-cambio">
+            <h2 class="titles1">Metodología de la evaluación</h2>
+            <div class="">
+                <p class="paragraph">Este tipo de evaluación se refiere a una Evaluación de necesidades multisectorial a nivel comunitario para la recolección de datos primarios que permitan obtener una visión oportuna y rápida de la situación ante emergencias humanitarias y cuando existen brechas de información y comunicación con las comunidades. Esto implica recopilar información sobre las necesidades específicas de las comunidades y sobre las situaciones de alarma que se presentan en el territorio. Además de incorporar medidas para identificar situaciones de vulnerabilidad y riesgos de los NNA, la evaluación se encuentra estructurada con el fin de poder ser ejecutada previa a una crisis humanitaria (información pre- desastre) y también como respuesta rápida ante una emergencia por desastres naturales (información post-desastre). </p>
+                <p class="paragraph">La evaluación va dirigida a líderes comunitarios, líderes sociales y las organizaciones claves de la comunidad, con el fin de conocer de primera mano las necesidades que tiene la comunidad a nivel territorial, dimensionar las problemáticas actuales, determinar las preocupaciones y prioridades de los miembros de la comunidad. La evaluación se puede ejecutar en un tiempo de entre 15 y 45 minutos dependiendo de los criterios seleccionados en el formulario para el levantamiento de la información.  </p>
+            </div>
+            <!-- Formulario y instructivo -->
+            <div class="border border-light p-3 mb-4">
+                <div class="text-center download">
+                    <!-- <button class="btn btn-primary">Formulario KoboToolbox</button> -->
+                    <a href="https://ee.humanitarianresponse.info/x/tBDLGkyN" target="_blank" class="btn btn-primary" role="button" aria-pressed="true">Formulario KoboToolbox</a>
+                </div>
+                
+            </div>
+            <div class="border border-light p-3 mb-4">
+                <div class="text-center download">
+                    <a href="/media/pdf/instructivo.pdf" download="instructivo.pdf" class="btn btn-primary" role="button" aria-pressed="true">Instructivo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Analisis -->
+
+    <section>
+        <div class="container">
+            <h2 class="titles1">Análisis de resultado</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6">
+                    <p class="ImaRes"><img src="{% static "base/img/icos/AR_1_recoleccion.png" %}" width="100" height="100"></p>
+                    <p class="paragraphAR">La recolección de datos de la encuesta de evaluación de necesidades, con enfoque en la situación de la niñez y adolescencia realizada en terreno, por medio de herramienta KoboToolbox en formulario digital en la nube</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6">
+                    <p class="ImaRes"><img src="{% static "base/img/icos/AR_2_Limpieza.png" %}" width="100" height="100"></p>
+                    <p class="paragraphAR">El proceso de revisión de la información diligenciada en los formularios es indispensable para garantizar que los datos sean acordes a las características del terreno y no existan errores en el diligenciamiento del formulario</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6">
+                    <p class="ImaRes"><img src="{% static "base/img/icos/AR_3_analisis.png" %}" width="100" height="100"></p>
+                    <p class="paragraphAR">Para el análisis cuantitativo y cualitativo de la información recolectada, las preguntas son agrupadas por temáticas con el fin de realizar una observación de los puntos específicos del cuestionario </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6">
+                    <p class="ImaRes"><img src="{% static "base/img/icos/AR_4_nforme.png" %}" width="100" height="100"></p>
+                    <p class="paragraphAR">Posterior a la recolección, validación y análisis de la información, se presenta un reporte de los resultados identificados, dependiendo de las necesidades puede ser desarrollado por punto de atención de personas caminantes, comunidad, municipio o departamento</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12">
+                    <p class="ImaRes"><img src="{% static "base/img/icos/AR_5_visualizacion.png" %}" width="100" height="100"></p>
+                    <p class="paragraphAR">El proceso final es la visualización de las evaluaciones realizadas, cartografía temática, gráficos estadísticos y análisis de resultados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Piloto -->
+    <section>
+        <div class="container">
+            <h2 class="titles1">Piloto de la evaluación </h2>
+            <div>
+                <p class="paragraphPilo">Para la ejecución de este piloto, se realizó un trabajo en conjunto entre UNICEF y IMMAP para implementar el formulario en KoboToolbox: Evaluación de necesidades, Situación de la niñez. Este piloto buscó identificar oportunidades de mejora de la herramienta y hacer un primer análisis de contexto de las comunidades visitadas. Las encuestas fueron llevadas a cabo desde el 15 de noviembre a Líderes comunitarios y Organizaciones humanitarias con presencia en las poblaciones vulnerable</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="mapa" id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+                    <script>
+
+                        var data = [{
+                        type:'scattermapbox',
+                        lat:{{ latitud|safe }},
+                        lon:{{ longitud|safe }},
+                        mode:'markers',
+                        marker: {
+                            size:14
+                        },
+                        text:{{ asentamientos|safe }}
+                        }]
+
+                        var layout = {
+                        title: 'Asentamientos evaluados',
+                        autosize: true,
+                        hovermode:'closest',
+                        mapbox: {
+                            bearing:0,
+                            center: {
+                            lat:4,
+                            lon:-73
+                            },
+                            pitch:0,
+                            zoom:3.9
+                        },
+                        margin: {
+                            r: 20,
+                            t: 30,
+                            b: 20,
+                            l: 20,
+                            pad: 0
+                            },
+                        }
+
+                        Plotly.setPlotConfig({
+                        mapboxAccessToken: "pk.eyJ1IjoiYW5kcmVzbXRyIiwiYSI6ImNsMDE3MjV2ZzBmcnUzY3FnN2djZDNkaTQifQ.CSsADFQ1vu-HUGhZG5Y3sQ"
+                        })
+
+                        Plotly.newPlot('myDiv', data, layout)
+                        
+                    </script>
+                </div>
+                <div class="col-12 col-sm-6 col-md-8">
+                    <!-- <canvas height="400" id="EvaluacionesR"></canvas></canvas> -->
+                    <canvas class="chart" id="bar-chart" height="320"></canvas>
+                    <script>
+                            var labels = {{ EveReaDepar|safe }}
+                            var data1 = {{ EveReaCuantas|safe }}
+                            
+                            const colorEvaR = []
+
+                            function getRandomItem(arr) {
+
+                            // get random index value
+                            const randomIndex = Math.floor(Math.random() * arr.length);
+                            // get random item
+                            const item = arr[randomIndex];
+                            return item;
+                            }
+                            const array = ['#0087BD', '#B284BE', '#00FFFF', '#E9D66B','#007FFF','#2E5894','#1F75FE','#0D98BA','#8A2BE2','#4D1A7F','#5072A7','#BD33A4','#702963','#5F9EA0','#A9B2C3','#91A3B0','#246BCE','#007BA7','#007AA5','#856088','#0047AB','#8C92AC','#6495ED','#2E2D88','#00FFFF','#00B7EB','#58427C','#666699','#008B8B'];
+
+                            for (let i = 0; i < labels.length; i++){
+                                colorEvaR.push(getRandomItem(array))
+                            }
+
+                            let miCanvas1 = document.getElementById('bar-chart').getContext("2d");
+    
+                            var chart = new Chart(miCanvas1, {
+                                    type: "bar",
+                                    data: {
+                                    labels: labels,
+                                    datasets: [
+                                            {
+                                            data: data1,
+                                            label: 'Cantidad',
+                                            backgroundColor: colorEvaR,  
+                                            },
+                                            ]
+                                        },
+                                    options: {
+                                    legend: { display: false },
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                    plugins: {
+                                        title: {
+                                        display: true,
+                                        text: 'Evaluaciones por departamento',
+                                        padding: {
+                                                top: 10,
+                                                bottom: 30
+                                                }
+                                            }
+                                        }
+                                    }
+                                })
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analisis por departamento -->
+    <section>
+        <div class="container">
+            <h3 class="titles1">Resultados del piloto</h3>
+            <div>
+                <p class="image2"><img src="{% static "base/img/foto1.png" %}" width="620" height="400"></p>
+            </div>
+            <br>
+            <p class="paragraph">Los principales resultados del piloto realizado en los departamentos de Arauca, Chocó, La Guajira y Norte de Santander, son los siguientes:</p>
+            <div>  
+            </div>
+            <div>
+                <div class="Select_departamento">
+                    <select class="selector">
+                        <option value="Nacional">Nacional</option> 
+                        <option value="Arauca">Arauca</option> 
+                        <!-- <option value="Atlántico">Atlántico</option> -->
+                        <option value="Chocó">Chocó</option> 
+                        <option value="La_Guajira">La Guajira</option> 
+                        <!-- <option value="Nariño">Nariño</option>  -->
+                        <option value="Norte_de_Santander">Norte de Santander</option> 
+                     </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="container">
+            <!-- Necesidades -->
+            <h4 class="titles1">Necesidades priorizadas por los asentamientos</h4>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-8">
+                    <canvas class="chart" id="polar-chart" height="420"></canvas>
+                    <script>
+                            var labels = {{ NecesidadesNom|safe }};
+                            var data1 = {{ NecesidadesNum|safe }};
+                            const colorNece = []
+
+                            // Arauca
+                            var labelsNeceArauca = {{ NecesidadesNomAra|safe }};
+                            var dataNeceArauca = {{ NecesidadesNumAra|safe }};
+
+                            // Choco
+                            var labelsNeceChoco = {{ NecesidadesNomChoco|safe }};
+                            var dataNeceChoco = {{ NecesidadesNumChoco|safe }};
+
+                            // Guajira
+                            var labelsNeceGuajira = {{ NecesidadesNomGuajira|safe }};
+                            var dataNeceGuajira = {{ NecesidadesNumGuajira|safe }};
+
+                            // Norte de Santander
+                            var labelsNeceNSant = {{ NecesidadesNomNSant|safe }};
+                            var dataNeceNSant = {{ NecesidadesNumNSant|safe }};
+
+                            for (let i = 0; i < labels.length; i++){
+                                colorNece.push(getRandomItem(array))
+                            }
+
+                            let miCanvas2 = document.getElementById('polar-chart').getContext("2d");
+
+
+                            var chart2 = new Chart(miCanvas2, {
+                                    type: "polarArea",
+                                    data: {
+                                    labels: labels,
+                                    datasets: [
+                                            {
+                                            data: data1,
+                                            label: 'Cantidad',
+                                            backgroundColor: colorNece, 
+                                            },
+                                            ]
+                                        },
+                                    options: {
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                    plugins: {
+                                        title: {
+                                        display: true,
+                                        text: 'Necesidades NNA',
+                                        padding: {
+                                                top: 10,
+                                                bottom: 30
+                                                }
+                                            }
+                                        }
+                                    }
+                                })
+
+                                document.querySelector('.selector').addEventListener("change",NecesidadesData);
+
+                                function NecesidadesData(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = data1;
+                                            labelFinal = labels;
+                                            chart2.data.labels = labelFinal;
+                                            chart2.data.datasets[0].data = datos;
+                                            chart2.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataNeceArauca;
+                                            labelFinal = labelsNeceArauca
+                                            chart2.data.labels = labelFinal;
+                                            chart2.data.datasets[0].data = datos;
+                                            chart2.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataNeceChoco;
+                                            labelFinal = labelsNeceChoco
+                                            chart2.data.labels = labelFinal;
+                                            chart2.data.datasets[0].data = datos;
+                                            chart2.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataNeceGuajira;
+                                            labelFinal = labelsNeceGuajira
+                                            chart2.data.labels = labelFinal;
+                                            chart2.data.datasets[0].data = datos;
+                                            chart2.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataNeceNSant;
+                                            labelFinal = labelsNeceNSant
+                                            chart2.data.labels = labelFinal;
+                                            chart2.data.datasets[0].data = datos;
+                                            chart2.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 paragraphMid">
+                    <div class="row">
+                        <p class="ImaRes2"><img src="{% static "base/img/icos/basic-needs.png" %}" width="100" height="100"></p>
+                        <p class="paragraph" id="NecesidatesText">A partir de las evaluaciones piloto realizadas se identificó que la mayor necesidad la atención de los niños, niñas y adolescentes en las comunidades encuestadas es <strong id="NecesidatesText1">{{MaxNecesidadesNom}}</strong> , seguido por <strong id="NecesidatesText2">{{MaxSecNecesidadesNom}}</strong> y <strong id="NecesidatesText3">{{MaxThrNecesidadesNom}}</strong>.</p>
+                        <script>
+                            document.querySelector('.selector').addEventListener("change",NecesidadesText);
+    
+                            function NecesidadesText(event){
+                                if(event.target.value === "Nacional"){
+                                    document.getElementById('NecesidatesText1').innerHTML = "{{MaxNecesidadesNom}}";
+                                    document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNom}}";
+                                    document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNom}}";
+                                }
+                                else if(event.target.value === "Arauca"){
+                                    document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Atlántico"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Chocó"){
+                                    document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomChoco}}";
+                                    document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomChoco}}";
+                                    document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomChoco}}";
+                                }
+                                else if(event.target.value === "La_Guajira"){
+                                    document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomGuajira}}";
+                                    document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomGuajira}}";
+                                    document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomGuajira}}";
+                                }
+                                else if(event.target.value === "Nariño"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Norte_de_Santander"){
+                                    document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNom}}";
+                                    document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNom}}";
+                                    document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNom}}";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!-- caracteristicas -->
+            <h4 class="titles1">Caracteristicas de los asentamientos</h4>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 paragraphMid">
+                    <div class="row">
+                        <p class="ImaRes2"><img src="{% static "base/img/icos/village.png" %}" width="100" height="100"></p>
+                        <p class="paragraph">Las principales caracteristicas identificadas <strong id="caracteristicas">a nivel nacional</strong>, son las siguientes: </p>
+                        <script>
+                            document.querySelector('.selector').addEventListener("change",Caracteristicas);
+        
+                            function Caracteristicas(event){
+                                if(event.target.value === "Nacional"){
+                                    document.getElementById('caracteristicas').innerHTML = "a nivel nacional";
+                                }
+                                else if(event.target.value === "Arauca"){
+                                    document.getElementById('caracteristicas').innerHTML = "en el departamento de Arauca";
+                                }
+                                else if(event.target.value === "Atlántico"){
+                                    document.getElementById('caracteristicas').innerHTML = "en el departamento de Atlántico";
+                                }
+                                else if(event.target.value === "Chocó"){
+                                       document.getElementById('caracteristicas').innerHTML = "en el departamento de Chocó";
+                                }
+                                else if(event.target.value === "La_Guajira"){
+                                    document.getElementById('caracteristicas').innerHTML = "en el departamento de La Guajira";
+                                }
+                                else if(event.target.value === "Nariño"){
+                                    document.getElementById('caracteristicas').innerHTML = "en el departamento de Nariño";
+                                }
+                                else if(event.target.value === "Norte_de_Santander"){
+                                    document.getElementById('caracteristicas').innerHTML = "en el departamento de Norte de Santander";
+                                }
+                            } 
+                        </script>
+
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-8">
+                    <canvas class="chart" id="caracteristicas-chart" height="350"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsCarac = {{ CaracteristicasNom|safe }};
+                                var dataCarac = {{ CaracteristicasNum|safe }};
+                                const colorCarac = []
+
+                                // Arauca
+                                var labelsCaracArauca = {{ CaracteristicasNomArauca|safe }};
+                                var dataCaracArauca = {{ CaracteristicasNumArauca|safe }};
+
+                                // Choco
+                                var labelsCaracChoco = {{ CaracteristicasNomChoco|safe }};
+                                var dataCaracChoco = {{ CaracteristicasNumChoco|safe }};
+
+                                // Guajira
+                                var labelsCaracGuajira = {{ CaracteristicasNomGuajira|safe }};
+                                var dataCaracGuajira = {{ CaracteristicasNumGuajira|safe }};
+
+                                // Norte de Santander
+                                var labelsCaracNSant = {{ CaracteristicasNomNorSan|safe }};
+                                var dataCaracNSant = {{ CaracteristicasNumNorSan|safe }};
+    
+                                for (let i = 0; i < labelsCarac.length; i++){
+                                    colorCarac.push(getRandomItem(array))
+                                }
+    
+                                let miCanvas3 = document.getElementById('caracteristicas-chart').getContext("2d");
+    
+                                var chart3 = new Chart(miCanvas3, {
+                                        type: "radar",
+                                        data: {
+                                        labels: labelsCarac,
+                                        datasets: [
+                                                {
+                                                data: dataCarac,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorCarac, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: 'Caracteristicas asentamientos',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",CaracteristicasData);
+    
+                                    function CaracteristicasData(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataCarac;
+                                            labelFinal = labelsCarac;
+                                            chart3.data.labels = labelFinal;
+                                            chart3.data.datasets[0].data = datos;
+                                            chart3.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataCaracArauca;
+                                            labelFinal = labelsCaracArauca
+                                            chart3.data.labels = labelFinal;
+                                            chart3.data.datasets[0].data = datos;
+                                            chart3.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataCaracChoco;
+                                            labelFinal = labelsCaracChoco
+                                            chart3.data.labels = labelFinal;
+                                            chart3.data.datasets[0].data = datos;
+                                            chart3.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataCaracGuajira;
+                                            labelFinal = labelsCaracGuajira
+                                            chart3.data.labels = labelFinal;
+                                            chart3.data.datasets[0].data = datos;
+                                            chart3.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataCaracNSant;
+                                            labelFinal = labelsCaracNSant
+                                            chart3.data.labels = labelFinal;
+                                            chart3.data.datasets[0].data = datos;
+                                            chart3.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6">
+                        <!-- <p class="paragraph">Los asentamietnos son informales:</p> -->
+                        <canvas class="chart" id="informal-chart" height="350"></canvas>
+                        <script>
+                                    // Nacional
+                                    var labelsInformal = {{ asentamiento_informalNom|safe }};
+                                    var dataInformal = {{ asentamiento_informalNum|safe }};
+                                    const colorInfo = []
+
+                                    // Arauca
+                                    var labelsInformalArauca = {{ asentamiento_informalNomAra|safe }};
+                                    var dataInformalArauca = {{ asentamiento_informalNumAra|safe }};
+
+                                    // Choco
+                                    var labelsInformalChoco = {{ asentamiento_informalNomChoco|safe }};
+                                    var dataInformalChoco = {{ asentamiento_informalNumChoco|safe }};
+
+                                    // Guajira
+                                    var labelsInformalGuajira = {{ asentamiento_informalNomGuajira|safe }};
+                                    var dataInformalGuajira = {{ asentamiento_informalNumGuajira|safe }};
+
+                                    // Norte de Santander
+                                    var labelsInformalNSantander = {{ asentamiento_informalNomNSan|safe }};
+                                    var dataInformalNSanatander = {{ asentamiento_informalNumNSan|safe }};
+        
+                                    for (let i = 0; i < labelsInformal.length; i++){
+                                        colorInfo.push(getRandomItem(array))
+                                    }
+
+                                    let miCanvasInfo = document.getElementById('informal-chart').getContext("2d");
+
+                                    var chartInformal = new Chart(miCanvasInfo, {
+                                            type: "doughnut",
+                                            data: {
+                                            labels: labelsInformal,
+                                            datasets: [
+                                                    {
+                                                    data: dataInformal,
+                                                    label: 'Cantidad',
+                                                    backgroundColor: colorInfo, 
+                                                    },
+                                                    ]
+                                                },
+                                            options: {
+                                            responsive: true,
+                                            maintainAspectRatio: false,
+                                            plugins: {
+                                                title: {
+                                                display: true,
+                                                text: 'Asentamiento informales',
+                                                padding: {
+                                                        top: 10,
+                                                        bottom: 30
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        })      
+                                        
+                                        document.querySelector('.selector').addEventListener("change",InformalChart);
+        
+                                        function InformalChart(event){
+                                            if(event.target.value === "Nacional"){
+                                                datos = dataInformal;
+                                                labelFinal = labelsInformal;
+                                                chartInformal.data.labels = labelFinal;
+                                                chartInformal.data.datasets[0].data = datos;
+                                                chartInformal.update();
+                                            }
+                                            else if(event.target.value === "Arauca"){
+                                                datos = dataInformalArauca;
+                                                labelFinal = labelsInformalArauca
+                                                chartInformal.data.labels = labelFinal;
+                                                chartInformal.data.datasets[0].data = datos;
+                                                chartInformal.update();
+                                            } 
+                                            else if(event.target.value === "Chocó"){
+                                                datos = dataInformalChoco;
+                                                labelFinal = labelsInformalChoco
+                                                chartInformal.data.labels = labelFinal;
+                                                chartInformal.data.datasets[0].data = datos;
+                                                chartInformal.update();
+                                            } 
+                                            else if(event.target.value === "La_Guajira"){
+                                                datos = dataInformalGuajira;
+                                                labelFinal = labelsInformalGuajira
+                                                chartInformal.data.labels = labelFinal;
+                                                chartInformal.data.datasets[0].data = datos;
+                                                chartInformal.update();
+                                            } 
+                                            else if(event.target.value === "Norte_de_Santander"){
+                                                datos = dataInformalNSanatander;
+                                                labelFinal = labelsInformalNSantander
+                                                chartInformal.data.labels = labelFinal;
+                                                chartInformal.data.datasets[0].data = datos;
+                                                chartInformal.update();
+                                            } 
+                                        }
+                        </script>
+                    
+                </div>
+                <div class="col-12 col-sm-6 col-md-6">
+                    <!-- <p class="paragraph">Viviendas en condiciones criticas</p> -->
+                    <canvas class="chart" id="terreno-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsTerreno = {{ TerrenoNom|safe }};
+                                var dataTerreno = {{ TerrenolNum|safe }};
+                                const colorTerreno = []
+
+                                // Arauca
+                                var labelsTerrenolArauca = {{ TerrenoNomAra|safe }};
+                                var dataTerrenoArauca = {{ TerrenolNumAra|safe }};
+
+                                // Choco
+                                var labelsTerrenolChoco = {{ TerrenoNomChoco|safe }};
+                                var dataTerrenoChoco = {{ TerrenolNumChoco|safe }};
+
+                                // Guajira
+                                var labelsTerrenolGuajira = {{ TerrenoNomGuajira|safe }};
+                                var dataTerrenoGuajira = {{ TerrenolNumGuajira|safe }};
+
+                                // Norte de Santander
+                                var labelsTerrenoNSantander = {{ TerrenoNomNSan|safe }};
+                                var dataTerrenoNSanatander = {{ TerrenolNumNSan|safe }};
+    
+                                for (let i = 0; i < labelsTerreno.length; i++){
+                                    colorTerreno.push(getRandomItem(array))
+                                }
+
+                                let miCanvasVivienda = document.getElementById('terreno-chart').getContext("2d");
+
+                                var chartTerreno = new Chart(miCanvasVivienda, {
+                                        type: "bar",
+                                        data: {
+                                        labels: labelsTerreno,
+                                        datasets: [
+                                                {
+                                                data: dataTerreno,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorTerreno, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: 'Terreno donde esta asentada la comunidad',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",InformalChart);
+    
+                                    function InformalChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataTerreno;
+                                            labelFinal = labelsTerreno;
+                                            chartTerreno.data.labels = labelFinal;
+                                            chartTerreno.data.datasets[0].data = datos;
+                                            chartTerreno.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataTerrenoArauca;
+                                            labelFinal = labelsTerrenolArauca
+                                            chartTerreno.data.labels = labelFinal;
+                                            chartTerreno.data.datasets[0].data = datos;
+                                            chartTerreno.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataTerrenoChoco;
+                                            labelFinal = labelsTerrenolChoco
+                                            chartTerreno.data.labels = labelFinal;
+                                            chartTerreno.data.datasets[0].data = datos;
+                                            chartTerreno.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataTerrenoGuajira;
+                                            labelFinal = labelsTerrenolGuajira
+                                            chartTerreno.data.labels = labelFinal;
+                                            chartTerreno.data.datasets[0].data = datos;
+                                            chartTerreno.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataTerrenoNSanatander;
+                                            labelFinal = labelsTerrenoNSantander
+                                            chartTerreno.data.labels = labelFinal;
+                                            chartTerreno.data.datasets[0].data = datos;
+                                            chartTerreno.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+            </div>
+            <!-- Migración -->
+            <h4 class="titles1">Población migrante</h4>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-8">
+                    <canvas class="chart" id="tiene-migración-chart" height="320"></canvas>
+                    <script>
+                            // Nacional
+                            var labelsTieMigra = {{ Tiene_migrantes_Nom|safe }};
+                            var dataTieMigra = {{ Tiene_migrantes_Num|safe }};
+                            const colorTieMigra = []
+
+                            // Arauca
+                            var labelsTieMigraArauca = {{ Tiene_migrantes_NomAra|safe }};
+                            var dataTieMigraArauca = {{ Tiene_migrantes_NumAra|safe }};
+
+                            // Choco
+                            var labelsTieMigraChoco = {{ Tiene_migrantes_NomChoco|safe }};
+                            var dataTieMigraChoco = {{ Tiene_migrantes_NumChoco|safe }};
+
+                            // Guajira
+                            var labelsTieMigraGuajira = {{ Tiene_migrantes_NomGua|safe }};
+                            var dataTieMigraGuajira = {{ Tiene_migrantes_NumGua|safe }};
+
+                            // Norte de Santander
+                            var labelsTieMigraNSan = {{ Tiene_migrantes_NomNSan|safe }};
+                            var dataTieMigraNSan = {{ Tiene_migrantes_NumNSan|safe }};
+
+                            for (let i = 0; i < labelsTieMigra.length; i++){
+                                colorTieMigra.push(getRandomItem(array))
+                            }
+
+                            let miCanvasTieneMigracion = document.getElementById('tiene-migración-chart').getContext("2d");
+
+
+                            var chartTieneMigracion = new Chart(miCanvasTieneMigracion, {
+                                    type: "pie",
+                                    data: {
+                                    labels: labelsTieMigra,
+                                    datasets: [
+                                            {
+                                            data: dataTieMigra,
+                                            label: 'Cantidad',
+                                            backgroundColor: colorTieMigra, 
+                                            },
+                                            ]
+                                        },
+                                    options: {
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                    plugins: {
+                                        title: {
+                                        display: true,
+                                        text: 'Los asentamientos tienen población migrante',
+                                        padding: {
+                                                top: 10,
+                                                bottom: 30
+                                                }
+                                            }
+                                        }
+                                    }
+                                })
+
+                                document.querySelector('.selector').addEventListener("change",MigracionTiene);
+
+                                function MigracionTiene(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataTieMigra;
+                                            labelFinal = labelsTieMigra;
+                                            chartTieneMigracion.data.labels = labelFinal;
+                                            chartTieneMigracion.data.datasets[0].data = datos;
+                                            chartTieneMigracion.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataTieMigraArauca;
+                                            labelFinal = labelsTieMigraArauca
+                                            chartTieneMigracion.data.labels = labelFinal;
+                                            chartTieneMigracion.data.datasets[0].data = datos;
+                                            chartTieneMigracion.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataTieMigraChoco;
+                                            labelFinal = labelsTieMigraChoco
+                                            chartTieneMigracion.data.labels = labelFinal;
+                                            chartTieneMigracion.data.datasets[0].data = datos;
+                                            chartTieneMigracion.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataTieMigraGuajira;
+                                            labelFinal = labelsTieMigraGuajira
+                                            chartTieneMigracion.data.labels = labelFinal;
+                                            chartTieneMigracion.data.datasets[0].data = datos;
+                                            chartTieneMigracion.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataTieMigraNSan;
+                                            labelFinal = labelsTieMigraNSan
+                                            chartTieneMigracion.data.labels = labelFinal;
+                                            chartTieneMigracion.data.datasets[0].data = datos;
+                                            chartTieneMigracion.update();
+                                        } 
+                                    }
+
+                    </script>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 paragraphMid">
+                    <div class="row">
+                        <p class="ImaRes2"><img src="{% static "base/img/icos/immigrant.png" %}" width="100" height="100"></p>
+                        <p class="paragraph" id="NecesidatesText">Los datos de migración obtenidos<strong id="migracionText"> a nivel nacional</strong>, son los siguientes:</p>
+                        <script>
+    
+                            document.querySelector('.selector').addEventListener("change",migracionText);
+    
+                            function migracionText(event){
+                                if(event.target.value === "Nacional"){
+                                    document.getElementById('migracionText').innerHTML = " a nivel nacional";
+                                }
+                                else if(event.target.value === "Arauca"){
+                                    document.getElementById('migracionText').innerHTML = " para el departamento de Arauca";
+                                }
+                                else if(event.target.value === "Atlántico"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Chocó"){
+                                    document.getElementById('migracionText').innerHTML = " para el departamento de Chocó";
+                                }
+                                else if(event.target.value === "La_Guajira"){
+                                    document.getElementById('migracionText').innerHTML = " para el departamento de La Guajira";
+                                }
+                                else if(event.target.value === "Nariño"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Norte_de_Santander"){
+                                    document.getElementById('migracionText').innerHTML = " para el departamento de Norte de Santander";
+                                }
+                            }
+    
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <canvas class="chart" id="migración-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsMigra = {{ MigrantesNom|safe }};
+                                var dataMigra = {{ MigrantesNum|safe }};
+                                const colorMigra = []
+    
+                                // Arauca
+                                var labelsMigraArauca = {{ MigrantesNomAra|safe }};
+                                var dataMigraArauca = {{ MigrantesNumAra|safe }};
+    
+                                // Choco
+                                var labelsMigraChoco = {{ MigrantesNomCho|safe }};
+                                var dataMigraChoco = {{ MigrantesNumCho|safe }};
+    
+                                // Guajira
+                                var labelsMigraGuajira = {{ MigrantesNomGua|safe }};
+                                var dataMigraGuajira = {{ MigrantesNumGua|safe }};
+    
+                                // Norte de Santander
+                                var labelsMigraNSan = {{ MigrantesNomNSan|safe }};
+                                var dataMigraNSan = {{ MigrantesNumNSan|safe }};
+    
+                                for (let i = 0; i < labelsMigra.length; i++){
+                                    colorMigra.push(getRandomItem(array))
+                                }
+    
+                                let miCanvasMigracionPor = document.getElementById('migración-chart').getContext("2d");
+    
+                                var chartMigracionPor = new Chart(miCanvasMigracionPor, {
+                                        type: "bar",
+                                        data: {
+                                        labels: labelsMigra,
+                                        datasets: [
+                                                {
+                                                data: dataMigra,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorMigra, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: 'Participación de migrantes en los asentamientos',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",InformalChart);
+    
+                                    function InformalChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataMigra;
+                                            labelFinal = labelsMigra;
+                                            chartMigracionPor.data.labels = labelFinal;
+                                            chartMigracionPor.data.datasets[0].data = datos;
+                                            chartMigracionPor.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataMigraArauca;
+                                            labelFinal = labelsMigraArauca;
+                                            chartMigracionPor.data.labels = labelFinal;
+                                            chartMigracionPor.data.datasets[0].data = datos;
+                                            chartMigracionPor.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataMigraChoco;
+                                            labelFinal = labelsMigraChoco;
+                                            chartMigracionPor.data.labels = labelFinal;
+                                            chartMigracionPor.data.datasets[0].data = datos;
+                                            chartMigracionPor.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataMigraGuajira;
+                                            labelFinal = labelsMigraGuajira;
+                                            chartMigracionPor.data.labels = labelFinal;
+                                            chartMigracionPor.data.datasets[0].data = datos;
+                                            chartMigracionPor.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataMigraNSan;
+                                            labelFinal = labelsMigraNSan;
+                                            chartMigracionPor.data.labels = labelFinal;
+                                            chartMigracionPor.data.datasets[0].data = datos;
+                                            chartMigracionPor.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+            </div>
+            <!-- Salud -->
+            <h4 class="titles1">Salud</h4>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 paragraphMid">
+                    <div class="row">
+                        <p class="ImaRes2"><img src="{% static "base/img/icos/healthcare.png" %}" width="100" height="100"></p>
+                        <p class="paragraph" id="NecesidatesText">Los datos de salud obtenidos<strong id="saludText"> a nivel nacional</strong>, son los siguientes:</p>
+                        <script>
+    
+                            document.querySelector('.selector').addEventListener("change",NecesidadesText);
+    
+                            function NecesidadesText(event){
+                                if(event.target.value === "Nacional"){
+                                    document.getElementById('saludText').innerHTML = " a nivel nacional";
+                                }
+                                else if(event.target.value === "Arauca"){
+                                    document.getElementById('saludText').innerHTML = " para el departamento de Arauca";
+                                }
+                                else if(event.target.value === "Atlántico"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Chocó"){
+                                    document.getElementById('saludText').innerHTML = " para el departamento de Chocó";
+                                }
+                                else if(event.target.value === "La_Guajira"){
+                                    document.getElementById('saludText').innerHTML = " para el departamento de La Guajira";
+                                }
+                                else if(event.target.value === "Nariño"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Norte_de_Santander"){
+                                    document.getElementById('saludText').innerHTML = " para el departamento de Norte de Santander";
+                                }
+                            }
+    
+                        </script>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-8">
+                    <canvas class="chart" id="tiene-afectaciones-salud-chart" height="320"></canvas>
+                    <script>
+                            // Nacional
+                            var labelsSalud = {{ Tiene_afectaciones_salud_Nom|safe }};
+                            var dataSalud = {{ Tiene_afectaciones_salud_Num|safe }};
+                            const colorSalud = []
+
+                            // Arauca
+                            var labelsSaludArauca = {{ Tiene_afectaciones_salud_NomArauca|safe }};
+                            var dataSaludArauca = {{ Tiene_afectaciones_salud_NumArauca|safe }};
+
+                            // Choco
+                            var labelsSaludChoco = {{ Tiene_afectaciones_salud_NomChoco|safe }};
+                            var dataSaludChoco = {{ Tiene_afectaciones_salud_NumChoco|safe }};
+
+                            // Guajira
+                            var labelsSaludGuajira = {{ Tiene_afectaciones_salud_NomGuajira|safe }};
+                            var dataSaludGuajira = {{ Tiene_afectaciones_salud_NumGuajira|safe }};
+
+                            // Norte de Santander
+                            var labelsSaludNSanT = {{ Tiene_afectaciones_salud_NomNSant|safe }};
+                            var dataSaludNSanT = {{ Tiene_afectaciones_salud_NumNSant|safe }};
+
+                            for (let i = 0; i < labelsSalud.length; i++){
+                                colorSalud.push(getRandomItem(array))
+                            }
+
+                            let miCanvasSalud = document.getElementById('tiene-afectaciones-salud-chart').getContext("2d");
+
+
+                            var chartSalud = new Chart(miCanvasSalud, {
+                                    type: "pie",
+                                    data: {
+                                    labels: labelsSalud,
+                                    datasets: [
+                                            {
+                                            data: dataSalud,
+                                            label: 'Cantidad',
+                                            backgroundColor: colorSalud,
+                                            },
+                                            ]
+                                        },
+                                    options: {
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                    plugins: {
+                                        title: {
+                                        display: true,
+                                        text: 'NNA con afectaciones de salud',
+                                        padding: {
+                                                top: 10,
+                                                bottom: 30
+                                                }
+                                            }
+                                        }
+                                    }
+                                })
+
+                                document.querySelector('.selector').addEventListener("change",SaludEfec);
+
+                                function SaludEfec(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataSalud;
+                                            labelFinal = labelsSalud;
+                                            chartSalud.data.labels = labelFinal;
+                                            chartSalud.data.datasets[0].data = datos;
+                                            chartSalud.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataSaludArauca;
+                                            labelFinal = labelsSaludArauca
+                                            chartSalud.data.labels = labelFinal;
+                                            chartSalud.data.datasets[0].data = datos;
+                                            chartSalud.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataSaludChoco;
+                                            labelFinal = labelsSaludChoco
+                                            chartSalud.data.labels = labelFinal;
+                                            chartSalud.data.datasets[0].data = datos;
+                                            chartSalud.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataSaludGuajira;
+                                            labelFinal = labelsSaludGuajira;
+                                            chartSalud.data.labels = labelFinal;
+                                            chartSalud.data.datasets[0].data = datos;
+                                            chartSalud.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataSaludNSanT;
+                                            labelFinal = labelsSaludNSanT
+                                            chartSalud.data.labels = labelFinal;
+                                            chartSalud.data.datasets[0].data = datos;
+                                            chartSalud.update();
+                                        } 
+                                    }
+
+                    </script>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <canvas class="chart" id="enfermedades-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsEnfermedades = {{ EnfermedadesNom|safe }};
+                                var dataEnfermedades = {{ EnfermedadesNum|safe }};
+                                const colorEnfermedades = []
+    
+                                // Arauca
+                                var labelsEnfermedadesArauca = {{ EnfermedadesNomArauca|safe }};
+                                var dataEnfermedadesArauca = {{ EnfermedadesNumArauca|safe }};
+    
+                                // Choco
+                                var labelsEnfermedadesChoco = {{ EnfermedadesNomChoco|safe }};
+                                var dataEnfermedadesChoco = {{ EnfermedadesNumChoco|safe }};
+    
+                                // Guajira
+                                var labelsEnfermedadesGuajira = {{ EnfermedadesNomGuajira|safe }};
+                                var dataEnfermedadesGuajira = {{ EnfermedadesNumGuajira|safe }};
+    
+                                // Norte de Santander
+                                var labelsEnfermedadesNSanT = {{ EnfermedadesNomNSan|safe }};
+                                var dataEnfermedadesNSanT = {{ EnfermedadesNumNSan|safe }};
+    
+                                for (let i = 0; i < labelsEnfermedades.length; i++){
+                                    colorEnfermedades.push(getRandomItem(array))
+                                }
+    
+                                let miCanvasEnfermedades = document.getElementById('enfermedades-chart').getContext("2d");
+    
+                                var chartEnfermedades = new Chart(miCanvasEnfermedades, {
+                                        type: "radar",
+                                        data: {
+                                        labels: labelsEnfermedades,
+                                        datasets: [
+                                                {
+                                                data: dataEnfermedades,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorEnfermedades, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: 'Principales enfermedades indicadas',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",InformalChart);
+    
+                                    function InformalChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataEnfermedades;
+                                            labelFinal = labelsEnfermedades;
+                                            chartEnfermedades.data.labels = labelFinal;
+                                            chartEnfermedades.data.datasets[0].data = datos;
+                                            chartEnfermedades.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataEnfermedadesArauca;
+                                            labelFinal = labelsEnfermedadesArauca;
+                                            chartEnfermedades.data.labels = labelFinal;
+                                            chartEnfermedades.data.datasets[0].data = datos;
+                                            chartEnfermedades.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataEnfermedadesChoco;
+                                            labelFinal = labelsEnfermedadesChoco;
+                                            chartEnfermedades.data.labels = labelFinal;
+                                            chartEnfermedades.data.datasets[0].data = datos;
+                                            chartEnfermedades.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataEnfermedadesGuajira;
+                                            labelFinal = labelsEnfermedadesGuajira;
+                                            chartEnfermedades.data.labels = labelFinal;
+                                            chartEnfermedades.data.datasets[0].data = datos;
+                                            chartEnfermedades.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataEnfermedadesNSanT;
+                                            labelFinal = labelsEnfermedadesNSanT;
+                                            chartEnfermedades.data.labels = labelFinal;
+                                            chartEnfermedades.data.datasets[0].data = datos;
+                                            chartEnfermedades.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+                <!-- <p class="paragraph">Viviendas en condiciones criticas</p> -->
+                <div class="col-12 col-sm-6 col-md-8">
+                    <canvas class="chart" id="acceso-salud-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsAccesoSalud = {{ AccesoSaludNom|safe }};
+                                var dataAccesoSalud = {{ AccesoSaludNum|safe }};
+                                const colorAccesoSalud = []
+    
+                                // Arauca
+                                var labelsAccesoSaludArauca = {{ AccesoSaludNomArauca|safe }};
+                                var dataAccesoSaludArauca = {{ AccesoSaludNumArauca|safe }};
+    
+                                // Choco
+                                var labelsAccesoSaludChoco = {{ AccesoSaludNomChoco|safe }};
+                                var dataAccesoSaludGuajira = {{ AccesoSaludNumChoco|safe }};
+    
+                                // Guajira
+                                var labelsAccesoSaludGuajira = {{ AccesoSaludNomGuajira|safe }};
+                                var dataAccesoSaludGuajira = {{ AccesoSaludNumGuajira|safe }};
+    
+                                // Norte de Santander
+                                var labelsAccesoSaludNSan = {{ AccesoSaludNomNSan|safe }};
+                                var dataAccesoSaludNSan = {{ AccesoSaludNumNsan|safe }};
+    
+                                for (let i = 0; i < labelsAccesoSalud.length; i++){
+                                    colorAccesoSalud.push(getRandomItem(array))
+                                }
+    
+                                let miCanvasAccesoSalud = document.getElementById('acceso-salud-chart').getContext("2d");
+    
+                                var chartAccesoSalud = new Chart(miCanvasAccesoSalud, {
+                                        type: "bar",
+                                        data: {
+                                        labels: labelsAccesoSalud,
+                                        datasets: [
+                                                {
+                                                data: dataAccesoSalud,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorAccesoSalud, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: 'Participación de migrantes en los asentamientos',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",AccesoSaludChart);
+    
+                                    function AccesoSaludChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataAccesoSalud;
+                                            labelFinal = labelsAccesoSalud;
+                                            chartAccesoSalud.data.labels = labelFinal;
+                                            chartAccesoSalud.data.datasets[0].data = datos;
+                                            chartAccesoSalud.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataAccesoSaludArauca;
+                                            labelFinal = labelsAccesoSaludArauca;
+                                            chartAccesoSalud.data.labels = labelFinal;
+                                            chartAccesoSalud.data.datasets[0].data = datos;
+                                            chartAccesoSalud.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataAccesoSaludChoco;
+                                            labelFinal = labelsAccesoSaludChoco;
+                                            chartAccesoSalud.data.labels = labelFinal;
+                                            chartAccesoSalud.data.datasets[0].data = datos;
+                                            chartAccesoSalud.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataAccesoSaludGuajira;
+                                            labelFinal = labelsAccesoSaludGuajira;
+                                            chartAccesoSalud.data.labels = labelFinal;
+                                            chartAccesoSalud.data.datasets[0].data = datos;
+                                            chartAccesoSalud.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataAccesoSaludNSan;
+                                            labelFinal = labelsAccesoSaludNSan;
+                                            chartAccesoSalud.data.labels = labelFinal;
+                                            chartAccesoSalud.data.datasets[0].data = datos;
+                                            chartAccesoSalud.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+            </div>
+            <!-- Salud -->
+            <h4 class="titles1">Educación</h4>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-8">
+                    <canvas class="chart" id="tiempo-educacion-chart" height="320"></canvas>
+                    <script>
+                            // Nacional
+                            var labelsTiempoEdu = {{ TiempoEscdNom|safe }};
+                            var dataTiempoEdu = {{ TiempoEscNum|safe }};
+                            const colorTiempoEducac = []
+
+                            // Arauca
+                            var labelsTiempoEduArauca = {{ TiempoEscdNomArauca|safe }};
+                            var dataTiempoEduArauca = {{ TiempoEscNumArauca|safe }};
+
+                            // Choco
+                            var labelsTiempoEduChoco = {{ TiempoEscdNomChoco|safe }};
+                            var dataTiempoEduChoco = {{ TiempoEscNumChoco|safe }};
+
+                            // Guajira
+                            var labelsTiempoEduGuajira = {{ TiempoEscdNomGuajira|safe }};
+                            var dataTiempoEduGuajira = {{ TiempoEscNumGuajira|safe }};
+
+                            // Norte de Santander
+                            var labelsTiempoEduNSan = {{ TiempoEscdNomNSan|safe }};
+                            var dataTiempoEduNSan = {{ TiempoEscNumNSan|safe }};
+
+                            for (let i = 0; i < labelsTiempoEdu.length; i++){
+                                colorTiempoEducac.push(getRandomItem(array))
+                            }
+
+                            let miCanvasTiempoEducacion = document.getElementById('tiempo-educacion-chart').getContext("2d");
+
+
+                            var chartTiempoEducacion = new Chart(miCanvasTiempoEducacion, {
+                                    type: "pie",
+                                    data: {
+                                    labels: labelsTiempoEdu,
+                                    datasets: [
+                                            {
+                                            data: dataTiempoEdu,
+                                            label: 'Cantidad',
+                                            backgroundColor: colorTiempoEducac, 
+                                            },
+                                            ]
+                                        },
+                                    options: {
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                    plugins: {
+                                        title: {
+                                        display: true,
+                                        text: 'A cuántos minutos caminando de la comunidad se encuentra la Institución Educativa más cercana',
+                                        padding: {
+                                                top: 10,
+                                                bottom: 30
+                                                }
+                                            }
+                                        }
+                                    }
+                                })
+
+                                document.querySelector('.selector').addEventListener("change",MigracionTiene);
+
+                                function MigracionTiene(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataTiempoEdu;
+                                            labelFinal = labelsTiempoEdu;
+                                            chartTiempoEducacion.data.labels = labelFinal;
+                                            chartTiempoEducacion.data.datasets[0].data = datos;
+                                            chartTiempoEducacion.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataTiempoEduArauca;
+                                            labelFinal = labelsTiempoEduArauca
+                                            chartTiempoEducacion.data.labels = labelFinal;
+                                            chartTiempoEducacion.data.datasets[0].data = datos;
+                                            chartTiempoEducacion.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataTiempoEduChoco;
+                                            labelFinal = labelsTiempoEduChoco
+                                            chartTiempoEducacion.data.labels = labelFinal;
+                                            chartTiempoEducacion.data.datasets[0].data = datos;
+                                            chartTiempoEducacion.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataTiempoEduGuajira;
+                                            labelFinal = labelsTiempoEduGuajira
+                                            chartTiempoEducacion.data.labels = labelFinal;
+                                            chartTiempoEducacion.data.datasets[0].data = datos;
+                                            chartTiempoEducacion.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataTiempoEduNSan;
+                                            labelFinal = labelsTiempoEduNSan
+                                            chartTiempoEducacion.data.labels = labelFinal;
+                                            chartTiempoEducacion.data.datasets[0].data = datos;
+                                            chartTiempoEducacion.update();
+                                        } 
+                                    }
+
+                    </script>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 paragraphMid">
+                    <div class="row">
+                        <p class="ImaRes2"><img src="{% static "base/img/icos/book-stack.png" %}" width="100" height="100"></p>
+                        <p class="paragraph" id="NecesidatesText">Los datos de educación obtenidos<strong id="educacionText"> a nivel nacional</strong>, son los siguientes:</p>
+                        <script>
+    
+                            document.querySelector('.selector').addEventListener("change",educacionText);
+    
+                            function educacionText(event){
+                                if(event.target.value === "Nacional"){
+                                    document.getElementById('educacionText').innerHTML = " a nivel nacional";
+                                }
+                                else if(event.target.value === "Arauca"){
+                                    document.getElementById('educacionText').innerHTML = " para el departamento de Arauca";
+                                }
+                                else if(event.target.value === "Atlántico"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Chocó"){
+                                    document.getElementById('educacionText').innerHTML = " para el departamento de Chocó";
+                                }
+                                else if(event.target.value === "La_Guajira"){
+                                    document.getElementById('educacionText').innerHTML = " para el departamento de La Guajira";
+                                }
+                                else if(event.target.value === "Nariño"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Norte_de_Santander"){
+                                    document.getElementById('educacionText').innerHTML = " para el departamento de Norte de Santander";
+                                }
+                            }
+    
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <canvas class="chart" id="sin-educacion-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsSinEducacion = {{ SinEducacionNom|safe }};
+                                var dataSinEducacion = {{ SinEducacionNum|safe }};
+                                const colorSinEducacion = []
+    
+                                // Arauca
+                                var labelsSinEducacionArauca = {{ SinEducacionNomArauca|safe }};
+                                var dataSinEducacionArauca = {{ SinEducacionNumArauca|safe }};
+    
+                                // Choco
+                                var labelsSinEducacionChoco = {{ SinEducacionNomChoco|safe }};
+                                var dataSinEducacionChoco = {{ SinEducacionNumChoco|safe }};
+    
+                                // Guajira
+                                var labelsSinEducacionGuajira = {{ SinEducacionNomGuajira|safe }};
+                                var dataSinEducacionGuajira = {{ SinEducacionNumGuajira|safe }};
+    
+                                // Norte de Santander
+                                var labelsSinEducacionNSan = {{ SinEducacionNomNSan|safe }};
+                                var dataSinEducacionNSan = {{ SinEducacionNumNSan|safe }};
+    
+                                for (let i = 0; i < labelsSinEducacion.length; i++){
+                                    colorSinEducacion.push(getRandomItem(array))
+                                }
+    
+                                let miCanvasSinEdu = document.getElementById('sin-educacion-chart').getContext("2d");
+    
+                                var chartSinEducacion= new Chart(miCanvasSinEdu, {
+                                        type: "pie",
+                                        data: {
+                                        labels: labelsSinEducacion,
+                                        datasets: [
+                                                {
+                                                data: dataSinEducacion,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorSinEducacion, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: 'Existen casos de niños, niñas o adolescentes que no asisten a instituciones educativas ya sea de forma presencial o virtual',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",InformalChart);
+    
+                                    function InformalChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataSinEducacion;
+                                            labelFinal = labelsSinEducacion;
+                                            chartSinEducacion.data.labels = labelFinal;
+                                            chartSinEducacion.data.datasets[0].data = datos;
+                                            chartSinEducacion.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataSinEducacionArauca;
+                                            labelFinal = labelsSinEducacionArauca;
+                                            chartSinEducacion.data.labels = labelFinal;
+                                            chartSinEducacion.data.datasets[0].data = datos;
+                                            chartSinEducacion.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataSinEducacionChoco;
+                                            labelFinal = labelsSinEducacionChoco;
+                                            chartSinEducacion.data.labels = labelFinal;
+                                            chartSinEducacion.data.datasets[0].data = datos;
+                                            chartSinEducacion.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataSinEducacionGuajira;
+                                            labelFinal = labelsSinEducacionGuajira;
+                                            chartSinEducacion.data.labels = labelFinal;
+                                            chartSinEducacion.data.datasets[0].data = datos;
+                                            chartSinEducacion.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataSinEducacionNSan;
+                                            labelFinal = labelsSinEducacionNSan;
+                                            chartSinEducacion.data.labels = labelFinal;
+                                            chartSinEducacion.data.datasets[0].data = datos;
+                                            chartSinEducacion.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+                <div class="col-12 col-sm-6 col-md-8">
+                    <canvas class="chart" id="razon-sin-educacion-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsRazonesEdu = {{ RazonesSinEducacionNom|safe }};
+                                var dataRazonesEdu = {{ RazonesSinEducacionNum|safe }};
+                                const colorRazonSinEstidio = []
+    
+                                // Arauca
+                                var labelsRazonesEduArauca = {{ RazonesSinEducacionNomArauca|safe }};
+                                var dataRazonesEduArauca = {{ RazonesSinEducacionNumArauca|safe }};
+    
+                                // Choco
+                                var labelsRazonesEduChoco = {{ RazonesSinEducacionNomChoco|safe }};
+                                var dataRazonesEduChoco = {{ RazonesSinEducacionNumChoco|safe }};
+    
+                                // Guajira
+                                var labelsRazonesEduGuajira = {{ RazonesSinEducacionNomGuajira|safe }};
+                                var dataRazonesEduGuajira = {{ RazonesSinEducacionNumGuajira|safe }};
+    
+                                // Norte de Santander
+                                var labelsRazonesEduNSan = {{ RazonesSinEducacionNomNSan|safe }};
+                                var dataRazonesEduNSan = {{ RazonesSinEducacionNumNSan|safe }};
+    
+                                for (let i = 0; i < labelsTerreno.length; i++){
+                                    colorRazonSinEstidio.push(getRandomItem(array))
+                                }
+    
+                                let miCanvasRazonSinEstudio = document.getElementById('razon-sin-educacion-chart').getContext("2d");
+    
+                                var chartRazonSinEstudio = new Chart(miCanvasRazonSinEstudio, {
+                                        type: "bar",
+                                        data: {
+                                        labels: labelsRazonesEdu,
+                                        datasets: [
+                                                {
+                                                data: dataRazonesEdu,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorRazonSinEstidio, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: 'Razones de no estudiar',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",AccesoSaludChart);
+    
+                                    function AccesoSaludChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataRazonesEdu;
+                                            labelFinal = labelsRazonesEdu;
+                                            chartRazonSinEstudio.data.labels = labelFinal;
+                                            chartRazonSinEstudio.data.datasets[0].data = datos;
+                                            chartRazonSinEstudio.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataRazonesEduArauca;
+                                            labelFinal = labelsRazonesEduArauca;
+                                            chartRazonSinEstudio.data.labels = labelFinal;
+                                            chartRazonSinEstudio.data.datasets[0].data = datos;
+                                            chartRazonSinEstudio.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataRazonesEduChoco;
+                                            labelFinal = labelsRazonesEduChoco;
+                                            chartRazonSinEstudio.data.labels = labelFinal;
+                                            chartRazonSinEstudio.data.datasets[0].data = datos;
+                                            chartRazonSinEstudio.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataRazonesEduGuajira;
+                                            labelFinal = labelsRazonesEduGuajira;
+                                            chartRazonSinEstudio.data.labels = labelFinal;
+                                            chartRazonSinEstudio.data.datasets[0].data = datos;
+                                            chartRazonSinEstudio.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataRazonesEduNSan;
+                                            labelFinal = labelsRazonesEduNSan;
+                                            chartRazonSinEstudio.data.labels = labelFinal;
+                                            chartRazonSinEstudio.data.datasets[0].data = datos;
+                                            chartRazonSinEstudio.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+            </div>
+            <h4 class="titles1">Agua Saneamiento e higiene - WASH</h4>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 paragraphMid">
+                    <div class="row">
+                        <p class="ImaRes2"><img src="{% static "base/img/icos/wash-your-hands.png" %}" width="100" height="100"></p>
+                        <p class="paragraph" id="NecesidatesText">Los datos de WASH obtenidos<strong id="washText"> a nivel nacional</strong>, son los siguientes:</p>
+                        <script>
+    
+                            document.querySelector('.selector').addEventListener("change",educacionText);
+    
+                            function educacionText(event){
+                                if(event.target.value === "Nacional"){
+                                    document.getElementById('washText').innerHTML = " a nivel nacional";
+                                }
+                                else if(event.target.value === "Arauca"){
+                                    document.getElementById('washText').innerHTML = " para el departamento de Arauca";
+                                }
+                                else if(event.target.value === "Atlántico"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Chocó"){
+                                    document.getElementById('washText').innerHTML = " para el departamento de Chocó";
+                                }
+                                else if(event.target.value === "La_Guajira"){
+                                    document.getElementById('washText').innerHTML = " para el departamento de La Guajira";
+                                }
+                                else if(event.target.value === "Nariño"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Norte_de_Santander"){
+                                    document.getElementById('washText').innerHTML = " para el departamento de Norte de Santander";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-8">
+                    <canvas class="chart" id="fuente-agua-chart" height="320"></canvas>
+                    <script>
+                            // Nacional
+                            var labelsFuenteAgua = {{ FuenteAguaPrincipalNom|safe }};
+                            var dataFuenteAgua = {{ FuenteAguaPrincipalNum|safe }};
+                            const colorFuenteAgua = []
+
+                            // Arauca
+                            var labelsFuenteAguaArauca = {{ FuenteAguaPrincipalNomArauca|safe }};
+                            var dataFuenteAguaArauca = {{ FuenteAguaPrincipalNumArauca|safe }};
+
+                            // Choco
+                            var labelsFuenteAguaChoco = {{ FuenteAguaPrincipalNomChoco|safe }};
+                            var dataFuenteAguaChoco = {{ FuenteAguaPrincipalNumChoco|safe }};
+
+                            // Guajira
+                            var labelsFuenteAguaGuajira = {{ FuenteAguaPrincipalNomGuajira|safe }};
+                            var dataFuenteAguaGuajira = {{ FuenteAguaPrincipalNumGuajira|safe }};
+
+                            // Norte de Santander
+                            var labelsFuenteAguaNSan = {{ FuenteAguaPrincipalNomNSan|safe }};
+                            var dataFuenteAguaNSan = {{ FuenteAguaPrincipalNumNSan|safe }};
+
+                            for (let i = 0; i < labelsFuenteAgua.length; i++){
+                                colorFuenteAgua.push(getRandomItem(array))
+                            }
+
+                            let miCanvasFuenteAgua = document.getElementById('fuente-agua-chart').getContext("2d");
+
+
+                            var chartFuenteAgua = new Chart(miCanvasFuenteAgua, {
+                                    type: "bar",
+                                    data: {
+                                    labels: labelsFuenteAgua,
+                                    datasets: [
+                                            {
+                                            data: dataFuenteAgua,
+                                            label: 'Cantidad',
+                                            backgroundColor: colorFuenteAgua, 
+                                            },
+                                            ]
+                                        },
+                                    options: {
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                    plugins: {
+                                        title: {
+                                        display: true,
+                                        text: 'Principal fuente de agua',
+                                        padding: {
+                                                top: 10,
+                                                bottom: 30
+                                                }
+                                            }
+                                        }
+                                    }
+                                })
+
+                                document.querySelector('.selector').addEventListener("change",MigracionTiene);
+
+                                function MigracionTiene(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataFuenteAgua;
+                                            labelFinal = labelsFuenteAgua;
+                                            chartFuenteAgua.data.labels = labelFinal;
+                                            chartFuenteAgua.data.datasets[0].data = datos;
+                                            chartFuenteAgua.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataFuenteAguaArauca;
+                                            labelFinal = labelsFuenteAguaArauca
+                                            chartFuenteAgua.data.labels = labelFinal;
+                                            chartFuenteAgua.data.datasets[0].data = datos;
+                                            chartFuenteAgua.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataFuenteAguaChoco;
+                                            labelFinal = labelsFuenteAguaChoco
+                                            chartFuenteAgua.data.labels = labelFinal;
+                                            chartFuenteAgua.data.datasets[0].data = datos;
+                                            chartFuenteAgua.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataFuenteAguaGuajira;
+                                            labelFinal = labelsFuenteAguaGuajira
+                                            chartFuenteAgua.data.labels = labelFinal;
+                                            chartFuenteAgua.data.datasets[0].data = datos;
+                                            chartFuenteAgua.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataFuenteAguaNSan;
+                                            labelFinal = labelsFuenteAguaNSan
+                                            chartFuenteAgua.data.labels = labelFinal;
+                                            chartFuenteAgua.data.datasets[0].data = datos;
+                                            chartFuenteAgua.update();
+                                        } 
+                                    }
+
+                    </script>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6">
+                    <canvas class="chart" id="recoleccion-basura-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsRecoleccionBasura = {{ RecoleccionBasuraslNom|safe }};
+                                var dataRecolecccionBasura = {{ RecoleccionBasuraslNum|safe }};
+                                const colorRecoleccionBasura = []
+    
+                                // Arauca
+                                var labelsRecoleccionBasuraArauca = {{ RecoleccionBasuraslNomArauca|safe }};
+                                var dataRecolecccionBasuraArauca = {{ RecoleccionBasuraslNumArauca|safe }};
+    
+                                // Choco
+                                var labelsRecoleccionBasuraChoco = {{ RecoleccionBasuraslNomChoco|safe }};
+                                var dataRecolecccionBasuraChoco = {{ RecoleccionBasuraslNumChoco|safe }};
+    
+                                // Guajira
+                                var labelsRecoleccionBasuraGuajira = {{ RecoleccionBasuraslNomGuajira|safe }};
+                                var dataRecolecccionBasuraGuajira = {{ RecoleccionBasuraslNumGuajira|safe }};
+    
+                                // Norte de Santander
+                                var labelsRecoleccionBasuraNSan = {{ RecoleccionBasuraslNomNSan|safe }};
+                                var dataRecolecccionBasuraNSan = {{ RecoleccionBasuraslNumNSan|safe }};
+    
+                                for (let i = 0; i < labelsRecoleccionBasura.length; i++){
+                                    colorRecoleccionBasura.push(getRandomItem(array))
+                                }
+    
+                                let miCanvasRecoBasura = document.getElementById('recoleccion-basura-chart').getContext("2d");
+    
+                                var chartRecoBasu= new Chart(miCanvasRecoBasura, {
+                                        type: "pie",
+                                        data: {
+                                        labels: labelsRecoleccionBasura,
+                                        datasets: [
+                                                {
+                                                data: dataRecolecccionBasura,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorRecoleccionBasura, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: 'Como recolectan la basura en los asentamientos',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",InformalChart);
+    
+                                    function InformalChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataRecolecccionBasura;
+                                            labelFinal = labelsRecoleccionBasura;
+                                            chartRecoBasu.data.labels = labelFinal;
+                                            chartRecoBasu.data.datasets[0].data = datos;
+                                            chartRecoBasu.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataRecolecccionBasuraArauca;
+                                            labelFinal = labelsRecoleccionBasuraArauca;
+                                            chartRecoBasu.data.labels = labelFinal;
+                                            chartRecoBasu.data.datasets[0].data = datos;
+                                            chartRecoBasu.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataRecolecccionBasuraChoco;
+                                            labelFinal = labelsRecoleccionBasuraChoco;
+                                            chartRecoBasu.data.labels = labelFinal;
+                                            chartRecoBasu.data.datasets[0].data = datos;
+                                            chartRecoBasu.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataRecolecccionBasuraGuajira;
+                                            labelFinal = labelsRecoleccionBasuraGuajira;
+                                            chartRecoBasu.data.labels = labelFinal;
+                                            chartRecoBasu.data.datasets[0].data = datos;
+                                            chartRecoBasu.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataRecolecccionBasuraNSan;
+                                            labelFinal = labelsRecoleccionBasuraNSan;
+                                            chartRecoBasu.data.labels = labelFinal;
+                                            chartRecoBasu.data.datasets[0].data = datos;
+                                            chartRecoBasu.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6">
+                    <canvas class="chart" id="focos-contaminacion-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsFocosCont = {{ FocosContaminacionlNom|safe }};
+                                var dataFocosCont = {{ FocosContaminacionlNum|safe }};
+                                const colorFocosConta = []
+    
+                                // Arauca
+                                var labelsFocosContArauca = {{ FocosContaminacionlNomArauca|safe }};
+                                var dataFocosContArauca = {{ FocosContaminacionlNumArauca|safe }};
+    
+                                // Choco
+                                var labelsFocosContChoco = {{ FocosContaminacionlNomChoco|safe }};
+                                var dataFocosContChoco = {{ FocosContaminacionlNumChoco|safe }};
+    
+                                // Guajira
+                                var labelsFocosContGuajira = {{ FocosContaminacionlNomGuajira|safe }};
+                                var dataFocosContGuajira = {{ FocosContaminacionlNumGuajira|safe }};
+    
+                                // Norte de Santander
+                                var labelsFocosContNSan = {{ FocosContaminacionlNomNSan|safe }};
+                                var dataFocosContNSan = {{ FocosContaminacionlNumNSan|safe }};
+    
+                                for (let i = 0; i < labelsFocosCont.length; i++){
+                                    colorFocosConta.push(getRandomItem(array))
+                                }
+    
+                                let miCanvasFocosCont = document.getElementById('focos-contaminacion-chart').getContext("2d");
+    
+                                var chartFocosCont = new Chart(miCanvasFocosCont, {
+                                        type: "bar",
+                                        data: {
+                                        labels: labelsFocosCont,
+                                        datasets: [
+                                                {
+                                                data: dataFocosCont,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorFocosConta, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: 'Focos de contaminación',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",AccesoSaludChart);
+    
+                                    function AccesoSaludChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataFocosCont;
+                                            labelFinal = labelsFocosCont;
+                                            chartFocosCont.data.labels = labelFinal;
+                                            chartFocosCont.data.datasets[0].data = datos;
+                                            chartFocosCont.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataFocosContArauca;
+                                            labelFinal = labelsFocosContArauca;
+                                            chartFocosCont.data.labels = labelFinal;
+                                            chartFocosCont.data.datasets[0].data = datos;
+                                            chartFocosCont.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataFocosContChoco;
+                                            labelFinal = labelsFocosContChoco;
+                                            chartFocosCont.data.labels = labelFinal;
+                                            chartFocosCont.data.datasets[0].data = datos;
+                                            chartFocosCont.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataFocosContGuajira;
+                                            labelFinal = labelsFocosContGuajira;
+                                            chartFocosCont.data.labels = labelFinal;
+                                            chartFocosCont.data.datasets[0].data = datos;
+                                            chartFocosCont.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataFocosContNSan;
+                                            labelFinal = labelsFocosContNSan;
+                                            chartFocosCont.data.labels = labelFinal;
+                                            chartFocosCont.data.datasets[0].data = datos;
+                                            chartFocosCont.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+            </div>
+            <!-- Protección-->
+            <h4 class="titles1">Protección</h4> 
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-8">
+                    <canvas class="chart" id="trabajo-infantil-chart" height="320"></canvas>
+                    <script>
+                            // Nacional
+                            var labelsTrabajoInf = {{ TrabajoInfantillNom|safe }};
+                            var dataTrabajoInf = {{ TrabajoInfantillNum|safe }};
+                            const colorTrabajoInf = []
+
+                            // Arauca
+                            var labelsTrabajoInfArauca = {{ TrabajoInfantillNomArauca|safe }};
+                            var dataTrabajoInfArauca = {{ TrabajoInfantillNumArauca|safe }};
+
+                            // Choco
+                            var labelsTrabajoInfChoco = {{ TrabajoInfantillNomChoco|safe }};
+                            var dataTrabajoInfChoco = {{ TrabajoInfantillNumChoco|safe }};
+
+                            // Guajira
+                            var labelsTrabajoInfGuajira = {{ TrabajoInfantillNomGuajira|safe }};
+                            var dataTrabajoInfGuajira = {{ TrabajoInfantillNumGuajira|safe }};
+
+                            // Norte de Santander
+                            var labelsTrabajoInfNSan = {{ TrabajoInfantillNomNSan|safe }};
+                            var dataTrabajoInfNSan = {{ TrabajoInfantillNumNsan|safe }};
+
+                            for (let i = 0; i < labelsTrabajoInf.length; i++){
+                                colorTrabajoInf.push(getRandomItem(array))
+                            }
+
+                            let miCanvasTrabajoInfantil = document.getElementById('trabajo-infantil-chart').getContext("2d");
+
+
+                            var chartTrabajoInfantil = new Chart(miCanvasTrabajoInfantil, {
+                                    type: "pie",
+                                    data: {
+                                    labels: labelsTrabajoInf,
+                                    datasets: [
+                                            {
+                                            data: dataTrabajoInf,
+                                            label: 'Cantidad',
+                                            backgroundColor: colorTrabajoInf, 
+                                            },
+                                            ]
+                                        },
+                                    options: {
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                    plugins: {
+                                        title: {
+                                        display: true,
+                                        text: '¿Existen casos de trabajo infantil en la comunidad?',
+                                        padding: {
+                                                top: 10,
+                                                bottom: 30
+                                                }
+                                            }
+                                        }
+                                    }
+                                })
+
+                                document.querySelector('.selector').addEventListener("change",MigracionTiene);
+
+                                function MigracionTiene(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataTrabajoInf;
+                                            labelFinal = labelsTrabajoInf;
+                                            chartTrabajoInfantil.data.labels = labelFinal;
+                                            chartTrabajoInfantil.data.datasets[0].data = datos;
+                                            chartTrabajoInfantil.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataTrabajoInfArauca;
+                                            labelFinal = labelsTrabajoInfArauca
+                                            chartTrabajoInfantil.data.labels = labelFinal;
+                                            chartTrabajoInfantil.data.datasets[0].data = datos;
+                                            chartTrabajoInfantil.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataTrabajoInfChoco;
+                                            labelFinal = labelsTrabajoInfChoco
+                                            chartTrabajoInfantil.data.labels = labelFinal;
+                                            chartTrabajoInfantil.data.datasets[0].data = datos;
+                                            chartTrabajoInfantil.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataTrabajoInfGuajira;
+                                            labelFinal = labelsTrabajoInfGuajira
+                                            chartTrabajoInfantil.data.labels = labelFinal;
+                                            chartTrabajoInfantil.data.datasets[0].data = datos;
+                                            chartTrabajoInfantil.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataTrabajoInfNSan;
+                                            labelFinal = labelsTrabajoInfNSan
+                                            chartTrabajoInfantil.data.labels = labelFinal;
+                                            chartTrabajoInfantil.data.datasets[0].data = datos;
+                                            chartTrabajoInfantil.update();
+                                        } 
+                                    }
+
+                    </script>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 paragraphMid">
+                    <div class="row">
+                        <p class="ImaRes2"><img src="{% static "base/img/icos/environmental-protection.png" %}" width="100" height="100"></p>
+                        <p class="paragraph" id="NecesidatesText">Los datos de protección obtenidos<strong id="proteccionText"> a nivel nacional</strong>, son los siguientes:</p>
+                        <script>
+                            document.querySelector('.selector').addEventListener("change",educacionText);
+    
+                            function educacionText(event){
+                                if(event.target.value === "Nacional"){
+                                    document.getElementById('proteccionText').innerHTML = " a nivel nacional";
+                                }
+                                else if(event.target.value === "Arauca"){
+                                    document.getElementById('proteccionText').innerHTML = " para el departamento de Arauca";
+                                }
+                                else if(event.target.value === "Atlántico"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Chocó"){
+                                    document.getElementById('proteccionText').innerHTML = " para el departamento de Chocó";
+                                }
+                                else if(event.target.value === "La_Guajira"){
+                                    document.getElementById('proteccionText').innerHTML = " para el departamento de La Guajira";
+                                }
+                                else if(event.target.value === "Nariño"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Norte_de_Santander"){
+                                    document.getElementById('proteccionText').innerHTML = " para el departamento de Norte de Santander";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6">
+                    <canvas class="chart" id="mendicidad-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsMendicidad = {{ MendicidadlNom|safe }};
+                                var dataMendicidad = {{ MendicidadlNum|safe }};
+                                const colorMendicidad = []
+    
+                                // Arauca
+                                var labelsMendicidadArauca = {{ MendicidadlNomArauca|safe }};
+                                var dataMendicidadArauca = {{ MendicidadlNumArauca|safe }};
+    
+                                // Choco
+                                var labelsMendicidadChoco = {{ MendicidadlNomChoco|safe }};
+                                var dataMendicidadChoco = {{ MendicidadlNumChoco|safe }};
+    
+                                // Guajira
+                                var labelsMendicidadGuajira = {{ MendicidadlNomGuajira|safe }};
+                                var dataMendicidadGuajira = {{ MendicidadlNumGuajira|safe }};
+    
+                                // Norte de Santander
+                                var labelsMendicidadNSan = {{ MendicidadlNomNSan|safe }};
+                                var dataMendicidadNSan = {{ MendicidadlNumNSan|safe }};
+    
+                                for (let i = 0; i < labelsMendicidad.length; i++){
+                                    colorMendicidad.push(getRandomItem(array))
+                                }
+    
+                                let miCanvasMendicidad = document.getElementById('mendicidad-chart').getContext("2d");
+    
+                                var chartMendicidad= new Chart(miCanvasMendicidad, {
+                                        type: "pie",
+                                        data: {
+                                        labels: labelsMendicidad,
+                                        datasets: [
+                                                {
+                                                data: dataMendicidad,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorMendicidad, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: '¿Existen casos de niños, niñas y adolescentes que ejercen la mendicidad?',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",InformalChart);
+    
+                                    function InformalChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataMendicidad;
+                                            labelFinal = labelsMendicidad;
+                                            chartMendicidad.data.labels = labelFinal;
+                                            chartMendicidad.data.datasets[0].data = datos;
+                                            chartMendicidad.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataMendicidadArauca;
+                                            labelFinal = labelsMendicidadArauca;
+                                            chartMendicidad.data.labels = labelFinal;
+                                            chartMendicidad.data.datasets[0].data = datos;
+                                            chartMendicidad.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataMendicidadChoco;
+                                            labelFinal = labelsMendicidadChoco;
+                                            chartMendicidad.data.labels = labelFinal;
+                                            chartMendicidad.data.datasets[0].data = datos;
+                                            chartMendicidad.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataMendicidadGuajira;
+                                            labelFinal = labelsMendicidadGuajira;
+                                            chartMendicidad.data.labels = labelFinal;
+                                            chartMendicidad.data.datasets[0].data = datos;
+                                            chartMendicidad.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataMendicidadNSan;
+                                            labelFinal = labelsMendicidadNSan;
+                                            chartMendicidad.data.labels = labelFinal;
+                                            chartMendicidad.data.datasets[0].data = datos;
+                                            chartMendicidad.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6">
+                    <canvas class="chart" id="apoyo-economico-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsApoyoEco = {{ ApoyoEconomicoNom|safe }};
+                                var dataApoyoEco = {{ ApoyoEconomicoNum|safe }};
+                                const colorApoyoEco = []
+    
+                                // Arauca
+                                var labelsApoyoEcoArauca = {{ ApoyoEconomicoNomArauca|safe }};
+                                var dataApoyoEcoArauca = {{ ApoyoEconomicoNumArauca|safe }};
+    
+                                // Choco
+                                var labelsApoyoEcoChoco = {{ ApoyoEconomicoNomChoco|safe }};
+                                var dataApoyoEcoChoco = {{ ApoyoEconomicoNumChoco|safe }};
+    
+                                // Guajira
+                                var labelsApoyoEcoGuajira = {{ ApoyoEconomicoNomGuajira|safe }};
+                                var dataApoyoEcoGuajira = {{ ApoyoEconomicoNumGaujira|safe }};
+    
+                                // Norte de Santander
+                                var labelsApoyoEcotNSan = {{ ApoyoEconomicoNomNSan|safe }};
+                                var dataApoyoEcoNSan = {{ ApoyoEconomicoNumNSan|safe }};
+    
+                                for (let i = 0; i < labelsApoyoEco.length; i++){
+                                    colorApoyoEco.push(getRandomItem(array))
+                                }
+    
+                                let miCanvasApoyoEconimico = document.getElementById('apoyo-economico-chart').getContext("2d");
+    
+                                var chartApoyoEconomico = new Chart(miCanvasApoyoEconimico, {
+                                        type: "bar",
+                                        data: {
+                                        labels: labelsApoyoEco,
+                                        datasets: [
+                                                {
+                                                data: dataApoyoEco,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorApoyoEco, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: '¿Se han presentado apoyo o ayudas económicas a las familias?',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",AccesoSaludChart);
+    
+                                    function AccesoSaludChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataApoyoEco;
+                                            labelFinal = labelsApoyoEco;
+                                            chartApoyoEconomico.data.labels = labelFinal;
+                                            chartApoyoEconomico.data.datasets[0].data = datos;
+                                            chartApoyoEconomico.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataApoyoEcoArauca;
+                                            labelFinal = labelsApoyoEcoArauca;
+                                            chartApoyoEconomico.data.labels = labelFinal;
+                                            chartApoyoEconomico.data.datasets[0].data = datos;
+                                            chartApoyoEconomico.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataApoyoEcoChoco;
+                                            labelFinal = labelsApoyoEcoChoco;
+                                            chartApoyoEconomico.data.labels = labelFinal;
+                                            chartApoyoEconomico.data.datasets[0].data = datos;
+                                            chartApoyoEconomico.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataApoyoEcoGuajira;
+                                            labelFinal = labelsApoyoEcoGuajira;
+                                            chartApoyoEconomico.data.labels = labelFinal;
+                                            chartApoyoEconomico.data.datasets[0].data = datos;
+                                            chartApoyoEconomico.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataApoyoEcoNSan;
+                                            labelFinal = labelsApoyoEcotNSan;
+                                            chartApoyoEconomico.data.labels = labelFinal;
+                                            chartApoyoEconomico.data.datasets[0].data = datos;
+                                            chartApoyoEconomico.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+            </div>   
+            <h4 class="titles1">Seguridad alimentaria - SAN</h4>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 paragraphMid">
+                    <div class="row">
+                        <p class="ImaRes2"><img src="{% static "base/img/icos/bibimbap.png" %}" width="100" height="100"></p>
+                        <p class="paragraph" id="NecesidatesText">Los datos de Seguridad alimentaria - SAN, obtenidos<strong id="SANText"> a nivel nacional</strong>, son los siguientes:</p>
+                        <script>
+                            document.querySelector('.selector').addEventListener("change",educacionText);
+    
+                            function educacionText(event){
+                                if(event.target.value === "Nacional"){
+                                    document.getElementById('SANText').innerHTML = " a nivel nacional";
+                                }
+                                else if(event.target.value === "Arauca"){
+                                    document.getElementById('SANText').innerHTML = " para el departamento de Arauca";
+                                }
+                                else if(event.target.value === "Atlántico"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Chocó"){
+                                    document.getElementById('SANText').innerHTML = " para el departamento de Chocó";
+                                }
+                                else if(event.target.value === "La_Guajira"){
+                                    document.getElementById('SANText').innerHTML = " para el departamento de La Guajira";
+                                }
+                                else if(event.target.value === "Nariño"){
+                                    // document.getElementById('NecesidatesText1').innerHTML = "{{ MaxNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText2').innerHTML = "{{MaxSecNecesidadesNomAra}}";
+                                    // document.getElementById('NecesidatesText3').innerHTML = "{{MaxThrNecesidadesNomAra}}";
+                                }
+                                else if(event.target.value === "Norte_de_Santander"){
+                                    document.getElementById('SANText').innerHTML = " para el departamento de Norte de Santander";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-8">
+                    <canvas class="chart" id="apoyo-alimentario-chart" height="320"></canvas>
+                    <script>
+                            // Nacional
+                            var labelsApoyoAlimentario = {{ ApoyoAlimentarioNom|safe }};
+                            var dataApoyoAlimentario = {{ ApoyoAlimentarioNum|safe }};
+                            const colorApoyoAlimentario = []
+
+                            // Arauca
+                            var labelsApoyoAlimentarioArauca = {{ ApoyoAlimentarioNomArauca|safe }};
+                            var dataApoyoAlimentarioArauca = {{ ApoyoAlimentarioNumArauca|safe }};
+
+                            // Choco
+                            var labelsApoyoAlimentarioChoco = {{ ApoyoAlimentarioNomChoco|safe }};
+                            var dataApoyoAlimentarioChoco = {{ ApoyoAlimentarioNumChoco|safe }};
+
+                            // Guajira
+                            var labelsApoyoAlimentarioGuajira = {{ ApoyoAlimentarioNomGuajira|safe }};
+                            var dataApoyoAlimentarioGuajira = {{ ApoyoAlimentarioNumGuajira|safe }};
+
+                            // Norte de Santander
+                            var labelsApoyoAlimentarioNSan = {{ ApoyoAlimentarioNomNSan|safe }};
+                            var dataApoyoAlimentarioNSan = {{ ApoyoAlimentarioNumNSan|safe }};
+
+                            for (let i = 0; i < labelsApoyoAlimentario.length; i++){
+                                colorApoyoAlimentario.push(getRandomItem(array))
+                            }
+
+                            let miCanvasApoyoAlimentario = document.getElementById('apoyo-alimentario-chart').getContext("2d");
+
+
+                            var chartApoyoAlimentario = new Chart(miCanvasApoyoAlimentario, {
+                                    type: "pie",
+                                    data: {
+                                    labels: labelsApoyoAlimentario,
+                                    datasets: [
+                                            {
+                                            data: dataApoyoAlimentario,
+                                            label: 'Cantidad',
+                                            backgroundColor: colorApoyoAlimentario, 
+                                            },
+                                            ]
+                                        },
+                                    options: {
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                    plugins: {
+                                        title: {
+                                        display: true,
+                                        text: 'Apoyo alimentario',
+                                        padding: {
+                                                top: 10,
+                                                bottom: 30
+                                                }
+                                            }
+                                        }
+                                    }
+                                })
+
+                                document.querySelector('.selector').addEventListener("change",MigracionTiene);
+
+                                function MigracionTiene(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataApoyoAlimentario;
+                                            labelFinal = labelsApoyoAlimentario;
+                                            chartApoyoAlimentario.data.labels = labelFinal;
+                                            chartApoyoAlimentario.data.datasets[0].data = datos;
+                                            chartApoyoAlimentario.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataApoyoAlimentarioArauca;
+                                            labelFinal = labelsApoyoAlimentarioArauca
+                                            chartApoyoAlimentario.data.labels = labelFinal;
+                                            chartApoyoAlimentario.data.datasets[0].data = datos;
+                                            chartApoyoAlimentario.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataApoyoAlimentarioChoco;
+                                            labelFinal = labelsApoyoAlimentarioChoco
+                                            chartApoyoAlimentario.data.labels = labelFinal;
+                                            chartApoyoAlimentario.data.datasets[0].data = datos;
+                                            chartApoyoAlimentario.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataApoyoAlimentarioGuajira;
+                                            labelFinal = labelsApoyoAlimentarioGuajira
+                                            chartApoyoAlimentario.data.labels = labelFinal;
+                                            chartApoyoAlimentario.data.datasets[0].data = datos;
+                                            chartApoyoAlimentario.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataApoyoAlimentarioNSan;
+                                            labelFinal = labelsApoyoAlimentarioNSan
+                                            chartApoyoAlimentario.data.labels = labelFinal;
+                                            chartApoyoAlimentario.data.datasets[0].data = datos;
+                                            chartApoyoAlimentario.update();
+                                        } 
+                                    }
+
+                    </script>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6">
+                    <canvas class="chart" id="consumo-alimento-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsConsumoAlimento = {{ ConsumoAlimentosNom|safe }};
+                                var dataConsumoAlimento = {{ ConsumoAlimentosNum|safe }};
+                                const colorConusmoAlimento = []
+    
+                                // Arauca
+                                var labelsConsumoAlimentoArauca = {{ ConsumoAlimentosNomArauca|safe }};
+                                var dataConsumoAlimentoArauca = {{ ConsumoAlimentosArauca|safe }};
+    
+                                // Choco
+                                var labelsConsumoAlimentoChoco = {{ ConsumoAlimentosNomChoco|safe }};
+                                var dataConsumoAlimentoChoco = {{ ConsumoAlimentosChoco|safe }};
+    
+                                // Guajira
+                                var labelsConsumoAlimentoGuajira = {{ ConsumoAlimentosNomGuajira|safe }};
+                                var dataConsumoAlimentoGuajira = {{ ConsumoAlimentosGuajira|safe }};
+    
+                                // Norte de Santander
+                                var labelsConsumoAlimentoNSan = {{ ConsumoAlimentosNomNSan|safe }};
+                                var dataConsumoAlimentoNSan = {{ ConsumoAlimentosNSan|safe }};
+    
+                                for (let i = 0; i < labelsConsumoAlimento.length; i++){
+                                    colorConusmoAlimento.push(getRandomItem(array))
+                                }
+    
+                                let miCanvasConsumoAlimento = document.getElementById('consumo-alimento-chart').getContext("2d");
+    
+                                var chartConsumoAlimento = new Chart(miCanvasConsumoAlimento, {
+                                        type: "pie",
+                                        data: {
+                                        labels: labelsConsumoAlimento,
+                                        datasets: [
+                                                {
+                                                data: dataConsumoAlimento,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorConusmoAlimento, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: 'Indique el nivel aproximado de consumo de alimentos por parte de los niños, niñas y adolescentes de la comunidadeconomicos',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",InformalChart);
+    
+                                    function InformalChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataConsumoAlimento;
+                                            labelFinal = labelsConsumoAlimento;
+                                            chartConsumoAlimento.data.labels = labelFinal;
+                                            chartConsumoAlimento.data.datasets[0].data = datos;
+                                            chartConsumoAlimento.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataConsumoAlimentoArauca;
+                                            labelFinal = labelsConsumoAlimentoArauca;
+                                            chartConsumoAlimento.data.labels = labelFinal;
+                                            chartConsumoAlimento.data.datasets[0].data = datos;
+                                            chartConsumoAlimento.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataConsumoAlimentoChoco;
+                                            labelFinal = labelsConsumoAlimentoChoco;
+                                            chartConsumoAlimento.data.labels = labelFinal;
+                                            chartConsumoAlimento.data.datasets[0].data = datos;
+                                            chartConsumoAlimento.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataConsumoAlimentoGuajira;
+                                            labelFinal = labelsConsumoAlimentoGuajira;
+                                            chartConsumoAlimento.data.labels = labelFinal;
+                                            chartConsumoAlimento.data.datasets[0].data = datos;
+                                            chartConsumoAlimento.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataConsumoAlimentoNSan;
+                                            labelFinal = labelsConsumoAlimentoNSan;
+                                            chartConsumoAlimento.data.labels = labelFinal;
+                                            chartConsumoAlimento.data.datasets[0].data = datos;
+                                            chartConsumoAlimento.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6">
+                    <canvas class="chart" id="desnutricion-chart" height="320"></canvas>
+                    <script>
+                                // Nacional
+                                var labelsDesnutricion = {{ DesnutricionNom|safe }};
+                                var dataDesnutricion = {{ DesnutricionNum|safe }};
+                                const colorDesnutricion = []
+    
+                                // Arauca
+                                var labelsDesnutricionArauca = {{ DesnutricionNomArauca|safe }};
+                                var dataDesnutricionArauca = {{ DesnutricionArauca|safe }};
+    
+                                // Choco
+                                var labelsDesnutricionChoco = {{ DesnutricionNomChoco|safe }};
+                                var dataDesnutricionChoco = {{ DesnutricionChoco|safe }};
+    
+                                // Guajira
+                                var labelsDesnutricionGuajira = {{ DesnutricionNomGuajira|safe }};
+                                var dataDesnutricionGuajira = {{ DesnutricionGuajira|safe }};
+    
+                                // Norte de Santander
+                                var labelsDesnutricionNSan = {{ DesnutricionNomNSan|safe }};
+                                var dataDesnutricionNSan = {{ DesnutricionNSan|safe }};
+    
+                                for (let i = 0; i < labelsDesnutricion.length; i++){
+                                    colorDesnutricion.push(getRandomItem(array))
+                                }
+    
+                                let miCanvasDesnutricion= document.getElementById('desnutricion-chart').getContext("2d");
+    
+                                var chartDesnutricion = new Chart(miCanvasDesnutricion, {
+                                        type: "pie",
+                                        data: {
+                                        labels: labelsDesnutricion,
+                                        datasets: [
+                                                {
+                                                data: dataDesnutricion,
+                                                label: 'Cantidad',
+                                                backgroundColor: colorDesnutricion, 
+                                                },
+                                                ]
+                                            },
+                                        options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                            display: true,
+                                            text: '¿Existen casos de niños, niñas o adolescentes que se encuentren en estado de desnutrición?',
+                                            padding: {
+                                                    top: 10,
+                                                    bottom: 30
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    })      
+                                    
+                                    document.querySelector('.selector').addEventListener("change",AccesoSaludChart);
+    
+                                    function AccesoSaludChart(event){
+                                        if(event.target.value === "Nacional"){
+                                            datos = dataDesnutricion;
+                                            labelFinal = labelsDesnutricion;
+                                            chartDesnutricion.data.labels = labelFinal;
+                                            chartDesnutricion.data.datasets[0].data = datos;
+                                            chartDesnutricion.update();
+                                        }
+                                        else if(event.target.value === "Arauca"){
+                                            datos = dataDesnutricionArauca;
+                                            labelFinal = labelsDesnutricionArauca;
+                                            chartDesnutricion.data.labels = labelFinal;
+                                            chartDesnutricion.data.datasets[0].data = datos;
+                                            chartDesnutricion.update();
+                                        } 
+                                        else if(event.target.value === "Chocó"){
+                                            datos = dataDesnutricionChoco;
+                                            labelFinal = labelsDesnutricionChoco;
+                                            chartDesnutricion.data.labels = labelFinal;
+                                            chartDesnutricion.data.datasets[0].data = datos;
+                                            chartDesnutricion.update();
+                                        } 
+                                        else if(event.target.value === "La_Guajira"){
+                                            datos = dataDesnutricionGuajira;
+                                            labelFinal = labelsDesnutricionGuajira;
+                                            chartDesnutricion.data.labels = labelFinal;
+                                            chartDesnutricion.data.datasets[0].data = datos;
+                                            chartDesnutricion.update();
+                                        } 
+                                        else if(event.target.value === "Norte_de_Santander"){
+                                            datos = dataDesnutricionNSan;
+                                            labelFinal = labelsDesnutricionNSan;
+                                            chartDesnutricion.data.labels = labelFinal;
+                                            chartDesnutricion.data.datasets[0].data = datos;
+                                            chartDesnutricion.update();
+                                        } 
+                                    }
+                    </script>
+                </div>
+            </div>   
+        </div>       
+    </section>
+
+        <!-- Piloto -->
+        <section>
+            <div class="container metodologia-cambio">
+                <h2 class="titles1">Lecciones aprendidas </h2>
+                <ul class="lista">
+                    <li class="salto-lista">Es importante conocer si en el territorio se han realizado evaluaciones de necesidades previas por parte de otras organizaciones humanitarias ya que permite realizar un intercambio de información que contribuye al mejoramiento de la información</li>
+                    <li class="salto-lista">Para el buen desarrollo de la evaluación, es importante conocer la estructura de la encuesta, las preguntas y sus opciones de respuesta, con el fin de construir una conversación con los encuestados que permita recolectar la información de manera más fluida</li>
+                    <li class="salto-lista">Algunas temáticas que se abordan en la evaluación pueden ser sensibles, por tal razón deben ser tratados con cuidado y las preguntas se deben gestionar con cautela para asegurarse de no aumentar la vulnerabilidad de las comunidades </li>
+                    <li class="salto-lista">Al ser una evaluación realizada a líderes comunitarios y organizaciones humanitarias, la información recopilada puede estar sesgada por el conocimiento y limitaciones que tenga el encuestado sobre el contexto.</li>
+                    <li class="salto-lista">Para recolectar debidamente la ubicación o localización de la comunidad, es necesario realizar una debida configuración del dispositivo para evitar la pérdida de información y utilizar una herramienta adicional para el levantamiento de la información geográfica con mejor precisión</li>
+                    <li class="salto-lista">En el caso que el encuestador evidencie que la persona entrevistada no cuenta con las herramientas o los conocimientos requeridos para obtener los resultados esperados, es esencial realizar evaluaciones adicionales con personas que cuenten con la información requerida de la comunidad para cruzar datos y así obtener un análisis de los resultados más preciso</li>
+                    <li class="salto-lista">Conocer si en el territorio se ha realizado cartografía previa, por ejemplo cartografía comunitaria de riesgos de desastres naturales como zonas de inundación, zonas de remoción en masa, zonas de movimientos sísmicos, zonas de deslizamiento, así como también, zonas seguras. </li>
+                    <li class="salto-lista">En muchas situaciones, los datos poblacionales son difíciles de encontrar o de determinar. Sin embargo, los datos desglosados mostrarán las distintas necesidades y el impacto de las acciones en los distintos grupos. Pueden indicar quiénes corren mayor riesgo y mostrar si son capaces de utilizar y de acceder a la asistencia humanitaria, o si es necesario hacer más para llegar a ellos</li>
+                    <li class="salto-lista">Seleccionar en la medida de lo posible todos los grupos de información, permite tener una visión amplia de la situación de las comunidades y permite identificar puntos estratégicos de atención.</li>
+                    <li class="salto-lista">Durante la evaluación, considerar situaciones que afecten la libertad de circulación de las personas en su territorio o a la asistencia humanitaria, esto incluye bloqueos, minas terrestres o artefactos explosivos, puestos de control o violaciones a derechos humanos. Si este es el caso informar a autoridades que tomen medidas de acción</li>
+                    <li class="salto-lista">En situaciones de crisis, las comunidades afectadas pueden utilizar mecanismos informales o alternativos de solución de controversias como la mediación a nivel comunitario o reuniones periódicas. Cuando existan, debe informarse a las personas y explicarles cómo pueden acceder a servicios formales de participación a través de ofrecer información sobre organizaciones sociales y humanitarias, servicios, programas, proyectos, actividades, entre otros.</li>
+                    <li class="salto-lista">En situaciones de crisis es importante que las personas que opten por una reparación jurídica a acceder a los mecanismos de la justicia de forma segura. Para que la derivación sea eficaz es preciso comprender qué organismos pueden brindar apoyo jurídico</li>
+
+                </ul>
+            </div>
+        </section>
+
+    {% endblock %}
+
+    <!-- javascript -->
+    <script src="{% static "base/js/nav.js" %}"></script>
+    <script src="{% static "base/js/scroll.js" %}"></script>    
+    
+    
+</body>
+</html>

@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+.banner1{
+
+  margin-top: 60px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom:60px;
+  text-align: center;
+  background-color: #208bee;
+  color: white;
+}
+
+.titlePrincipal{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+img{
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+.image{
+  text-align: center;
+  align-items: center; /* align vertical */
+}
+.image2{
+  text-align: center;
+  align-items: center; /* align vertical */
+}
+.titles1{
+  margin-top:60px;
+  margin-bottom:60px;
+  text-align: center;
+  background-color: #208bee;
+  color: white;
+}
+.metodologia-cambio{
+  background-color: #e5eff8;
+}
+
+.paragraph{
+  text-align: justify;
+}
+ 
+/* Quito el estilo de icono por defecto y le doy 0 de relleno padding al lado izquierdo */ 
+.lista  {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Accedo a los elementos de la lista y le doy posición relativa y un padding o relleno de 20px a la lado izquierdo de cada elemento */ 
+.lista li {
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Acá agrego varias propiedades, le doy ancho y alto de 10px, posición absoluta, coloco la imagen como fondo, entre otras propiedades */
+.lista li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-image: url('/static/base//img/icos/comprobar.png');
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.salto-lista{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.paragraphPilo{
+  text-align: justify;
+  margin-bottom:60px;
+}
+
+.paragraphAR{
+  text-align: center;
+}
+
+.paragraphMid{
+  display: flex;
+  text-align: justify;
+  align-items: center; /* align vertical */
+}
+
+.introIma{
+  
+  text-align: center;
+  align-items: center; 
+}
+
+.introImaWord{
+  margin-left:auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+.ImaRes{
+  /* display: flex; */
+  border-radius: 5px 20px 5px;
+  border: 3px solid #41a3ff;
+  /* background: #41a3ff; */
+  text-align: center;
+  align-items: center; /* align vertical */
+}
+.ImaRes2{
+  /* display: flex; */
+  border-radius: 5px 20px 5px;
+  /* background: #41a3ff; */
+  text-align: center;
+  align-items: center; /* align vertical */
+}
+
+.Select_departamento{
+  margin-top: 30px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom:30px;
+  text-align: center;
+}
+.selector{
+  margin-top: 20px;
+
+}
+
+.chart{
+  border-radius: 5px 20px 5px;
+  border: 1px solid #41a3ff;
+  margin-bottom:20px;
+}
+/* @media screen and (max-width:1024px){
+  img.introIma {width: 200px;}
+}
+
+@media screen and (min-width:1025px){
+  img.introIma{width: 300px;}
+}
+
+img.introIma{height: auto;} */
+
+@media (max-width: 736px) {
+  .image2 {
+    width: 310px;
+    height: 200px;
+    text-align: center;
+    align-items: center; /* align vertical */
+  }
+}
